@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crash режим — интерактивный сайт</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="header">
+    <div class="wrapper">
+      <h1 class="title">Crash режим для вашего сайта</h1>
+      <p class="subtitle">Переключайте обычный интерфейс и режим системного сбоя в один клик. Используйте эффект для презентаций, стримов или первичного прототипирования.</p>
+      <button class="mode-toggle" type="button" aria-pressed="false">Включить crash режим</button>
+      <p class="status" role="status" aria-live="polite">Crash режим выключен.</p>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="wrapper">
+      <section class="section">
+        <h2>Зачем использовать crash режим</h2>
+        <ul class="benefits">
+          <li>
+            <h3>Демо эффект</h3>
+            <p>Показать неожиданный сбой интерфейса, не ломая реальный продукт.</p>
+          </li>
+          <li>
+            <h3>Геймификация</h3>
+            <p>Добавьте дополнительную механику в квест или ARG.</p>
+          </li>
+          <li>
+            <h3>Тестирование реакций</h3>
+            <p>Проверьте, как пользователи поведут себя при нестандартной ситуации.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Как работает</h2>
+        <ol class="steps">
+          <li>Нажмите кнопку &laquo;Включить crash режим&raquo;.</li>
+          <li>Наблюдайте за глитч-анимацией и логами &laquo;ошибок&raquo;.</li>
+          <li>Нажмите ещё раз, чтобы вернуться к спокойному интерфейсу.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2>Имитация логов</h2>
+        <div class="log" aria-live="polite" aria-atomic="false"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <p>Создано специально для демонстрации интерактивного crash режима.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
